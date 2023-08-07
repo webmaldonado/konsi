@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Konsi</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #FFFFFF;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .logo {
+      width: 272px;
+      height: 92px;
+      margin-bottom: 20px;
+    }
+
+    .search-form {
+      display: flex;
+      align-items: center;
+      border: 1px solid #ccc;
+      border-radius: 24px;
+      padding: 10px;
+      max-width: 600px;
+      width: 90%;
+    }
+
+    .search-input {
+      flex: 1;
+      border: none;
+      padding: 8px;
+      font-size: 16px;
+    }
+
+    .search-button {
+      background-color: #f2f2f2;
+      border: none;
+      cursor: pointer;
+      padding: 8px;
+      border-radius: 50%;
+      margin-left: 10px;
+      transition: background-color 0.3s;
+    }
+
+    .search-button:hover {
+      background-color: #e0e0e0;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="data:image/png;base64,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" alt="Google Logo" class="logo">
+    <form action="/search" method="post" class="search-form">
+      <input type="text" name="search_term" id="search_term" class="search-input" placeholder="Pesquisar matrícula" aria-label="Pesquisar matrícula">
+      <button type="submit" class="search-button" aria-label="Pesquisar">
+        <img src="https://www.gstatic.com/images/icons/material/system/1x/search_black_24dp.png" alt="Search Icon">
+      </button>
+    </form>
+  </div>
+</body>
+</html>

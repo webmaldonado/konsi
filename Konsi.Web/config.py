@@ -1,0 +1,2 @@
+HOST_ELASTICSEARCH = 'elasticsearch'
+INDEX_ELASTICSEARCH = 'konsi'
